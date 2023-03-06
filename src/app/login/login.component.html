@@ -1,0 +1,25 @@
+
+<div class="m-2">
+  <h5>{{data}}</h5>
+</div>
+
+   
+        <div id="signin" class="container p-3  mt-5 bg-primary bg-opacity-50 border rounded-5" action="">
+            <h1 class="text-center">Sign in</h1>
+            <form>
+              <div>
+                <label class="mb-2 mt-2" for="">Account number</label>
+                <input (change)="acnoChange($event)" id="u1" name="uname" class="form-control" type="text" [placeholder]="data1">
+              </div>
+          
+              <div >
+                <label class="mb-2 mt-2" for="">Password</label>
+                <input (change)="pswChange($event)" id="p1" name="password" class="form-control" type="password">
+              </div>
+          
+              <div class="text-center mt-3" >
+                  <button (click)="login()" class="btn btn-dark" >Sign in</button>
+              </div >
+            </form>
+          </div>
+  
