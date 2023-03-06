@@ -11,9 +11,9 @@ export class LoginComponent {
 
   data1="Enter your account number"    // property binding
 
-  acno:any   //define type of all arguements
+  // acno:any   //define type of all arguements
 
-  psw:any    //define type of all arguements
+  // psw:any    //define type of all arguements
 
   userDetails:any={
     1000:{username:"anu",acno:1000,password:"abc123",balance:0},
@@ -27,43 +27,71 @@ export class LoginComponent {
 
   // methods
 
-  acnoChange(event:any){                  //$event binding  define type of all arguements
-    this.acno=event.target.value
-    console.log(this.acno);
+  // acnoChange(event:any){                  //$event binding  define type of all arguements
+    // this.acno=event.target.value
+    // console.log(this.acno);
 
     // console.log(event);
     
     
-  }
+  // }
 
-  pswChange(event:any){
-    this.psw=event.target.value
+  // pswChange(event:any){
+  //   this.psw=event.target.value
 
-    console.log(this.psw);
+  //   console.log(this.psw);
     
-  }
+  // }
 
-  login(){                                //event binding
+  // login(){                                //event binding
 
-    var acno=this.acno
-    var psw=this.psw
-    var userDetails=this.userDetails
+    // var acno=this.acno
+    // var psw=this.psw
+    // var userDetails=this.userDetails
     // alert('login worked')
 
-    if(acno in userDetails){
-      if(psw==userDetails[acno]["password"]){
-        alert('login success')
-      }
-      else{
-        alert('incorrect password')
-      }
+//     if(acno in userDetails){
+//       if(psw==userDetails[acno]["password"]){
+//         alert('login success')
+//       }
+//       else{
+//         alert('incorrect password')
+//       }
       
+//     }
+//     else{
+//       alert('incorrect account number')
+//     }
+
+
+//   }
+
+// }
+
+
+
+
+login(acno:any,psw:any){                                //event binding
+
+  var acno=acno.value
+  var psw=psw.value
+  var userDetails=this.userDetails
+  // alert('login worked')
+
+  if(acno in userDetails){
+    if(psw==userDetails[acno]["password"]){
+      alert('login success')
     }
     else{
-      alert('incorrect account number')
+      alert('incorrect password')
     }
-
-
+    
   }
+  else{
+    alert('incorrect account number')
+  }
+
+
+}
 
 }
