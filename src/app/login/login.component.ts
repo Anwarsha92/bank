@@ -11,9 +11,9 @@ export class LoginComponent {
 
   data1="Enter your account number"    // property binding
 
-  // acno:any   //define type of all arguements
+  acno:any   //define type of all arguements
 
-  // psw:any    //define type of all arguements
+  psw:any    //define type of all arguements
 
   userDetails:any={
     1000:{username:"anu",acno:1000,password:"abc123",balance:0},
@@ -43,55 +43,29 @@ export class LoginComponent {
     
   // }
 
-  // login(){                                //event binding
+  login(){                                //event binding
 
-    // var acno=this.acno
-    // var psw=this.psw
-    // var userDetails=this.userDetails
+    var acno=this.acno
+    var psw=this.psw
+    var userDetails=this.userDetails
     // alert('login worked')
 
-//     if(acno in userDetails){
-//       if(psw==userDetails[acno]["password"]){
-//         alert('login success')
-//       }
-//       else{
-//         alert('incorrect password')
-//       }
+    if(acno in userDetails){
+      if(psw==userDetails[acno]["password"]){
+        alert('login success')
+      }
+      else{
+        alert('incorrect password')
+      }
       
-//     }
-//     else{
-//       alert('incorrect account number')
-//     }
-
-
-//   }
-
-// }
-
-
-
-
-login(acno:any,psw:any){                                //event binding
-
-  var acno=acno.value
-  var psw=psw.value
-  var userDetails=this.userDetails
-  // alert('login worked')
-
-  if(acno in userDetails){
-    if(psw==userDetails[acno]["password"]){
-      alert('login success')
     }
     else{
-      alert('incorrect password')
+      alert('incorrect account number')
     }
-    
-  }
-  else{
-    alert('incorrect account number')
-  }
 
+
+  }
 
 }
 
-}
+
