@@ -1,0 +1,46 @@
+
+
+
+.box{
+    color: white;
+    width: 450px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+form label{
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+
+.box1{
+    margin-bottom: 80px;
+}
+
+
+
+
+@media (max-width:768px){
+    .box{
+        width: 400px;
+    }
+    h3{
+        color: white;
+    }
+    
+}
+
+@media (max-width:425px){
+    .box{
+        width: 100%;
+        margin-left: unset;
+
+    }
+
+    #outer{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

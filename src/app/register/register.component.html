@@ -1,1 +1,28 @@
-<p>register works!</p>
+
+
+
+
+<div id="signup" class="container p-3  mt-5 bg-primary bg-opacity-50 border rounded-5" action="">
+    <h1 class="text-center">Sign Up</h1>
+    <form>
+      <div>
+        <label class="mb-2 mt-2" for="">Account number</label>
+        <input [(ngModel)]="acno"   id="an" name="acno" class="form-control" type="text" >
+      </div>
+
+
+      <div>
+        <label class="mb-2 mt-2" for="">Username</label>
+        <input [(ngModel)]="uname"   id="un" name="uname" class="form-control" type="text" >
+      </div>
+  
+      <div >
+        <label class="mb-2 mt-2" for="">Password</label>
+        <input [(ngModel)]="psw"   id="pw" name="password" class="form-control" type="password">
+      </div>
+  
+      <div class="text-center mt-3" >
+          <button (click)="register()" class="btn btn-light text-dark" >Sign Up</button>
+      </div >
+    </form>
+  </div>

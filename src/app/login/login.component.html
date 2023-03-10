@@ -1,26 +1,25 @@
-
-<div class="m-2">
+<div id="data" class="m-2">
   <h5>{{data}}</h5>
 </div>
 
-   
-        <div id="signin" class="container p-3  mt-5 bg-primary bg-opacity-50 border rounded-5" action="">
-            <h1 class="text-center">Sign in</h1>
-            <form>
-              <div>
-                <label class="mb-2 mt-2" for="">Account number</label>
-                <input [(ngModel)]="acno"  id="u1" name="uname" class="form-control" type="text" [placeholder]="data1">
-              </div>
-          
-              <div >
-                <label class="mb-2 mt-2" for="">Password</label>
-                <input [(ngModel)]="psw" id="p1" name="password" class="form-control" type="password">
-              </div>
-          
-              <div class="text-center mt-3" >
-                  <button (click)="login()" class="btn btn-dark" >Sign in</button>
-                  <p>Don't have an account? <a style="color: rgb(252, 248, 0); text-decoration: none;" routerLink="register">Create account</a></p>
-              </div >
-            </form>
-          </div>
-  
+
+<div id="signin" class="container p-3 pb-0 mt-5 bg-primary bg-opacity-50 border rounded-5" action="">
+  <h1 class="text-center">Sign in</h1>
+  <form (ngSubmit)="login()">
+    <div>
+      <label class="mb-2 mt-2" for="">Account number</label>
+      <input [(ngModel)]="acno" id="u1" name="uname" class="form-control" type="text" [placeholder]="data1">
+    </div>
+
+    <div>
+      <label class="mb-2 mt-2" for="">Password</label>
+      <input [(ngModel)]="psw" id="p1" name="password" class="form-control" type="password">
+    </div>
+
+    <div class="text-center mt-3">
+      <button type="submit" class="btn btn-light text-dark">Sign in</button>
+      <p style="font-weight: lighter; color: rgb(0, 0, 0);">Don't have an account? <a
+          style="color: rgb(255, 255, 255); text-decoration: none;" routerLink="register">Create account</a></p>
+    </div>
+  </form>
+</div>

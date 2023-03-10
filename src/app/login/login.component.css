@@ -7,6 +7,13 @@
 }
 
 
+form label{
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+
+
+
 
 @media (max-width:768px){
     #signin{
@@ -17,5 +24,8 @@
 @media (max-width:425px){
     #signin{
         width: 75%;
+    }
+    #data{
+        color: white;
     }
 }

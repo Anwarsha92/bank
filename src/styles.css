@@ -5,17 +5,22 @@ body{
     background-repeat: no-repeat;
     min-height: 100vh;
     background-position: center;
-    /* position: relative; */
 }
 
 
 header{
     color: white;
     height: 50px;
-    background-color: #4D92D3;
+    background-color: #2a96fbd7;
+    align-items: center;
 }
 h3{
-    display: inline;
+    display: inline-table;
+}
+
+header a{
+    position: absolute;
+    right:20px;
 }
 
 footer{
@@ -23,5 +28,7 @@ footer{
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: #4D92D3;
+    color: white;
+    background-color: #2a96fbd7;
 }
+

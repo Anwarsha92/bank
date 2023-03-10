@@ -1,0 +1,19 @@
+#signup{
+    color: white;
+    width: 25%;
+    font-weight: bold;
+}
+
+
+
+@media (max-width:768px){
+    #signup{
+        width: 50%;
+    }
+}
+
+@media (max-width:425px){
+    #signup{
+        width: 75%;
+    }
+}

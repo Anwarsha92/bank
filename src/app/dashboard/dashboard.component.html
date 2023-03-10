@@ -1,1 +1,54 @@
-<p>dashboard works!</p>
+<h3 class="mt-3 ms-2">Welcome... <span style="color: red;">{{user}}</span ></h3>
+<h4 class="ms-2 " style="color: darkslateblue;">{{data}}</h4>
+
+  <div id="outer">
+    <div id="deposit" class="box p-3 mt-5 bg-primary bg-opacity-50 border rounded-5" action="">
+        <h1 class="text-center">Cash Deposit</h1>
+        <form (ngSubmit)="deposit()">
+          <div>
+            <label class="mb-2 mt-2" for="">Account number</label>
+            <input [(ngModel)]="acno" id="an_d" name="acn_d" class="form-control" type="text">
+          </div>
+      
+          <div >
+            <label class="mb-2 mt-2" for="">Password</label>
+            <input [(ngModel)]="psw" id="p_d" name="password_d" class="form-control" type="password">
+          </div>
+    
+          <div>
+            <label class="mb-2 mt-2" for="">Enter amount</label>
+            <input [(ngModel)]="amnt" id="d1" name="depamount" class="form-control" type="text">
+          </div>
+      
+          <div class="text-center mt-3" >
+              <button  type="submit" class="btn btn-light text-dark" >Submit</button>
+          </div >
+        </form>
+      </div>
+  </div >
+
+  <div id="outer">
+    <div id="withdraw" class="box box1 p-3 mt-5 bg-primary bg-opacity-50 border rounded-5" action="">
+        <h1 class="text-center">Cash Withdrawal</h1>
+        <form (ngSubmit)="withdraw()" >
+          <div>
+            <label class="mb-2 mt-2" for="">Account number</label>
+            <input [(ngModel)]="acno1" id="an_w" name="acn_w" class="form-control" type="text">
+          </div>
+      
+          <div >
+            <label class="mb-2 mt-2" for="">Password</label>
+            <input [(ngModel)]="psw1"  id="p_w" name="password_w" class="form-control" type="password">
+          </div>
+    
+          <div>
+            <label class="mb-2 mt-2" for="">Enter amount</label>
+            <input [(ngModel)]="amnt1" id="w1" name="withamount" class="form-control" type="text">
+          </div>
+      
+          <div class="text-center mt-3" >
+              <button type="submit" class="btn btn-light text-dark" >Submit</button>
+          </div >
+        </form>
+      </div>
+  </div >

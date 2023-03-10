@@ -88,7 +88,7 @@ html - view
 2. Two Way Binding
 ------------------
 
-    2.1 - ngModel [(ngModel)]="variable"
+    2.1 - ngModel ---> [(ngModel)]="variable"
             - FormsModule -module used to apply ngModel
 
 
@@ -132,3 +132,12 @@ in constructor
             access specifier  -private / public
              - private : can use the injecting class only in that class
              - public  : can use the injecting class in other classes of that file
+
+
+
+Angular Services
+----------------
+
+    Its a file in angular 
+    All components can access the content of service file
+        - create        ng g s filename
